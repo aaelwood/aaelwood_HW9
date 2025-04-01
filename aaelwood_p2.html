@@ -6,27 +6,49 @@
     <title> Business Analytics Student Survey  </title>
 </head>
 <body>
-    <h1>I am finishing my... </h1>
-    <ul>
-        <li>first year at iowa</li>
-        <li>second year at iowa</li>
-        <li>third year at iowa</li>
-        <li>fourth year at iowa</li>
-        <li>fifth or more year at iowa</li>
-    </ul>
-    <h2> BAIS core class that I have completed</h2>
-    <ul>
-        <li>Information Systems</li>
-        <li>Operations</li>
-        <li>Foundations of Business Analytics</li>
-        <li>Computational Thinking</li>
-        <li>Database Management</li>
-        <li>Data Wrangling</li>
-        <li>Data Mining</li>
-        <li>BAIS Capstone</li>
+    <h1> Business Analytics Student Survey</h1>
+    <label class="form-label">I am finishing my <span class="text-danger">* Required field</span></label>
+        <div>
+            <input type="radio" id="year1" name="year" value="1" required> 
+            <label for="year1">First year at Iowa</label><br>
+            <input type="radio" id="year2" name="year" value="2">
+            <label for="year2">Second year at Iowa</label><br>
+            <input type="radio" id="year3" name="year" value="3">
+            <label for="year3">Third year at Iowa</label><br>
+            <input type="radio" id="year4" name="year" value="4">
+            <label for="year4">Fourth year at Iowa</label><br>
+            <input type="radio" id="year5" name="year" value="5+">
+            <label for="year5">Fifth or more year at Iowa</label>
+        </div>
+    <label class="form-label mt-3">BAIS core classes I have completed <span class="text-danger">* Required field</span></label>
+        <div>
+            <input type="checkbox" id="info-systems" name="bais-classes" value="Information Systems">
+            <label for="info-systems">Information Systems</label><br>
+
+            <input type="checkbox" id="operations" name="bais-classes" value="Operations">
+            <label for="operations">Operations</label><br>
+
+            <input type="checkbox" id="foundations" name="bais-classes" value="Foundations of Business Analytics">
+            <label for="foundations">Foundations of Business Analytics</label><br>
+
+            <input type="checkbox" id="comp-thinking" name="bais-classes" value="Computational Thinking">
+            <label for="comp-thinking">Computational Thinking</label><br>
+
+            <input type="checkbox" id="database" name="bais-classes" value="Database Management">
+            <label for="database">Database Management</label><br>
+
+            <input type="checkbox" id="data-wrangling" name="bais-classes" value="Data Wrangling">
+            <label for="data-wrangling">Data Wrangling</label><br>
+
+            <input type="checkbox" id="data-mining" name="bais-classes" value="Data Mining">
+            <label for="data-mining">Data Mining</label><br>
+
+            <input type="checkbox" id="bais-capstone" name="bais-classes" value="BAIS Capstone">
+            <label for="bais-capstone">BAIS Capstone</label>
+        </div>
+
     </ul>
     <p> page 2 of 2</p>
-    <p> Finish </p>
 </body>
 <button onclick="window.location.href='aaelwood_ty.html';">
     Finish
