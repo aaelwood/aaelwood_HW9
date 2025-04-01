@@ -6,15 +6,94 @@
     <title> Business Analytics Student Survey  </title>
 </head>
 <body>
-    <h1>My home country is </h1>
-    <p>Insert answer here...</p>
-    <h2>My home town is </h2>
-    <p>Insert answer here...</p>
-    <h2>My home state is</h2>
-    <p>Insert answer here...</p>
+    <h1> Business Analytics Student Survey </h1>
+    <div class="mb-3">
+        <label for="home-country" class="form-label">My home country is</label>
+        <input type="text" id="home-country" name="home-country" class="form-control" autofocus>
+    </div>
+
+    <!-- Home Town Input with Tooltip -->
+    <div class="mb-3">
+        <label for="home-town" class="form-label">
+            My home town is 
+            <!-- Tooltip Icon -->
+            <i class="fa fa-question-circle text-success" data-bs-toggle="tooltip" title="What town did you live in before coming to college?"></i>
+        </label>
+        <input type="text" id="home-town" name="home-town" class="form-control" required>
+        <div class="text-danger">Required field</div>
+    </div>
+    <select name="state" id="state-select">
+        <option value="">-- choose state/territory --</option>
+        <option value="AL">AL</option>
+        <option value="AK">AK</option>
+        <option value="AZ">AZ</option>
+        <option value="AR">AR</option>
+        <option value="CA">CA</option>
+        <option value="CO">CO</option>
+        <option value="CT">CT</option>
+        <option value="DE">DE</option>
+        <option value="FL">FL</option>
+        <option value="GA">GA</option>
+        <option value="HI">HI</option>
+        <option value="ID">ID</option>
+        <option value="IL">IL</option>
+        <option value="IN">IN</option>
+        <option value="IA">IA</option>
+        <option value="KS">KS</option>
+        <option value="KY">KY</option>
+        <option value="LA">LA</option>
+        <option value="ME">ME</option>
+        <option value="MD">MD</option>
+        <option value="MA">MA</option>
+        <option value="MI">MI</option>
+        <option value="MN">MN</option>
+        <option value="MS">MS</option>
+        <option value="MO">MO</option>
+        <option value="MT">MT</option>
+        <option value="NE">NE</option>
+        <option value="NV">NV</option>
+        <option value="NH">NH</option>
+        <option value="NJ">NJ</option>
+        <option value="NM">NM</option>
+        <option value="NY">NY</option>
+        <option value="NC">NC</option>
+        <option value="ND">ND</option>
+        <option value="OH">OH</option>
+        <option value="OK">OK</option>
+        <option value="OR">OR</option>
+        <option value="PA">PA</option>
+        <option value="RI">RI</option>
+        <option value="SC">SC</option>
+        <option value="SD">SD</option>
+        <option value="TN">TN</option>
+        <option value="TX">TX</option>
+        <option value="UT">UT</option>
+        <option value="VT">VT</option>
+        <option value="VA">VA</option>
+        <option value="WA">WA</option>
+        <option value="WV">WV</option>
+        <option value="WI">WI</option>
+        <option value="WY">WY</option>
+        <!-- Added Washington D.C. -->
+        <option value="DC">DC - Washington D.C.</option>
+        <!-- Added U.S. Territories -->
+        <option value="AS">AS - American Samoa</option>
+        <option value="GU">GU - Guam</option>
+        <option value="MP">MP - Northern Mariana Islands</option>
+        <option value="PR">PR - Puerto Rico</option>
+        <option value="VI">VI - U.S. Virgin Islands</option>
+    </select>
     <h2>My impression of the BAIS major is </h2>
-    <p>Insert answer here...</p>
+<select id="likert-scale" name="likert-scale" class="form-select">
+    <option value="5">Very positive (5)</option>
+    <option value="4">Somewhat positive (4)</option>
+    <option value="3">Neutral (3)</option>
+    <option value="2">Somewhat negative (2)</option>
+    <option value="1">Very negative (1)</option>
+</select>
     <p> Page 1 of 2</p>
-    <p> Next</p>
+    <button onclick="window.location.href='aaelwood_p2.html';">
+        Next
+    </button>
 </body>
 </html>
